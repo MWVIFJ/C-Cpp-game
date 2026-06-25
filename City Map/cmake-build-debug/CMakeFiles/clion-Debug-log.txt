@@ -1,0 +1,48 @@
+/home/mwvifj/Byou/clion-2024.3.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/mwvifj/Byou/clion-2024.3.1/bin/ninja/linux/x64/ninja -DCMAKE_C_COMPILER=/usr/bin/arm-none-eabi-gcc -DCMAKE_CXX_COMPILER=/usr/bin/arm-none-eabi-g++ -G Ninja -S "/home/mwvifj/Byou/ProgramDL/CDL/City Map" -B "/home/mwvifj/Byou/ProgramDL/CDL/City Map/cmake-build-debug"
+-- The C compiler identification is GNU 13.2.1
+-- The CXX compiler identification is GNU 13.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /usr/bin/arm-none-eabi-gcc
+-- Check for working C compiler: /usr/bin/arm-none-eabi-gcc - broken
+CMake Error at /home/mwvifj/Byou/clion-2024.3.1/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:67 (message):
+  The C compiler
+
+    "/usr/bin/arm-none-eabi-gcc"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: '/home/mwvifj/Byou/ProgramDL/CDL/City Map/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yoMZ9c'
+    
+    Run Build Command(s): /home/mwvifj/Byou/clion-2024.3.1/bin/ninja/linux/x64/ninja -v cmTC_0d3ad
+    [1/2] /usr/bin/arm-none-eabi-gcc   -fdiagnostics-color=always -o CMakeFiles/cmTC_0d3ad.dir/testCCompiler.c.o -c '/home/mwvifj/Byou/ProgramDL/CDL/City Map/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yoMZ9c/testCCompiler.c'
+    [2/2] : && /usr/bin/arm-none-eabi-gcc   CMakeFiles/cmTC_0d3ad.dir/testCCompiler.c.o -o cmTC_0d3ad   && :
+    FAILED: cmTC_0d3ad 
+    : && /usr/bin/arm-none-eabi-gcc   CMakeFiles/cmTC_0d3ad.dir/testCCompiler.c.o -o cmTC_0d3ad   && :
+    /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+    /build/newlib-38V0JC/newlib-4.4.0.20231231/build/arm-none-eabi/newlib/../../../newlib/libc/stdlib/exit.c:65:(.text+0x28): undefined reference to `_exit'
+    /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+    /build/newlib-38V0JC/newlib-4.4.0.20231231/build/arm-none-eabi/newlib/../../../newlib/libc/reent/writer.c:49:(.text+0x24): undefined reference to `_write'
+    /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+    /build/newlib-38V0JC/newlib-4.4.0.20231231/build/arm-none-eabi/newlib/../../../newlib/libc/reent/sbrkr.c:51:(.text+0x18): undefined reference to `_sbrk'
+    /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+    /build/newlib-38V0JC/newlib-4.4.0.20231231/build/arm-none-eabi/newlib/../../../newlib/libc/reent/closer.c:47:(.text+0x18): undefined reference to `_close'
+    /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+    /build/newlib-38V0JC/newlib-4.4.0.20231231/build/arm-none-eabi/newlib/../../../newlib/libc/reent/readr.c:49:(.text+0x24): undefined reference to `_read'
+    /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+    /build/newlib-38V0JC/newlib-4.4.0.20231231/build/arm-none-eabi/newlib/../../../newlib/libc/reent/lseekr.c:49:(.text+0x24): undefined reference to `_lseek'
+    collect2: error: ld returned 1 exit status
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
